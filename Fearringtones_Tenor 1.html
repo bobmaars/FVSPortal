@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<!-- (This Page was created by Bob Maarschalkerweerd - BobMaars@gmail.com - Last Updated: 09 Sep 2025 01:12 PM) -->
+<!-- (Version 1.05) -->
+<head>
+  <meta charset='UTF-8'>
+  <link rel="stylesheet" href="portalTable.css?v=1.0">
+  <title>Tenor 1 Practice Tracks</title>
+  <script src="sorttable.js"></script>
+</head>
+<!-- (Set Default Theme color to Light - Where Dark is more relaxing and better for eyes) -->
+<!-- body class="dark" -->
+<body>
+<a name="top"></a>
+<div style="display: flex; align-items: center; justify-content: space-between; align-items: center;">
+  <img src="FVSlogo.png" alt="FVS Logo" style="height: 60px;">
+  <div style="display: flex; gap: 20px; align-items: center;">
+    <a href="index.html" style="font-size: 1em; color: #0078d7; text-decoration: none;">🏠 Return to Index</a>
+    <button onclick="toggleTheme()" style="background-color: #0078d7; color: white; border: none; padding: 6px 12px; border-radius: 5px; cursor: pointer;">🌓 Toggle Theme</button>
+  </div>
+</div>
+<script>
+  function toggleTheme() {
+    document.body.classList.toggle("dark");
+  }
+</script>
+
+<h1>🎵 Tenor 1 Practice Tracks – Fearringtones › Tenor 1</h1>
+<label for="searchBox"><strong>🔍 Search:</strong></label>
+<input type="text" id="searchBox" placeholder="Type to filter songs..." style="margin-left: 10px; padding: 4px; width: 300px;">
+<table class="sortable">
+<thead>
+  <tr>
+    <th title="Click to sort">Title</th>
+    <th title="Click to sort">Arrangement</th>
+    <th title="Click to sort">Type</th>
+    <th title="Click to sort">Play</th>
+  </tr>
+</thead>
+<tbody>
+<tr>
+  <td>Deck the Hall and Swing It</td>
+  <td>SATB</td>
+  <td>Accompaniment Track</td>
+  <td><audio controls><source src='Fearringtones/Tenor 1/Deck the Hall and Swing It SATB - Accompaniment Track - arr. Jay Althouse.mp3' type='audio/mpeg'></audio></td>
+</tr>
+<tr>
+  <td>Deck the Hall and Swing It</td>
+  <td>SATB</td>
+  <td>Balanced Voices</td>
+  <td><audio controls><source src='Fearringtones/Tenor 1/Deck the Hall and Swing It SATB - Balanced Voices - arr. Jay Althouse.mp3' type='audio/mpeg'></audio></td>
+</tr>
+<tr>
+  <td>Deck the Hall and Swing It</td>
+  <td>SATB</td>
+  <td>Tenor Predominant</td>
+  <td><audio controls><source src='Fearringtones/Tenor 1/Deck the Hall and Swing It SATB - Tenor Predominant - arr. Jay Althouse.mp3' type='audio/mpeg'></audio></td>
+</tr>
+<tr>
+  <td>The Holiday Season</td>
+  <td>SATB</td>
+  <td>Accompaniment Track</td>
+  <td><audio controls><source src='Fearringtones/Tenor 1/The Holiday Season SATB - Accompaniment Track - arr. Mark Hayes.mp3' type='audio/mpeg'></audio></td>
+</tr>
+<tr>
+  <td>The Holiday Season</td>
+  <td>SATB</td>
+  <td>Balanced Voices</td>
+  <td><audio controls><source src='Fearringtones/Tenor 1/The Holiday Season SATB - Balanced Voices - arr. Mark Hayes.mp3' type='audio/mpeg'></audio></td>
+</tr>
+<tr>
+  <td>The Holiday Season</td>
+  <td>SATB</td>
+  <td>Tenor Predominant</td>
+  <td><audio controls><source src='Fearringtones/Tenor 1/The Holiday Season SATB - Tenor Predominant - arr. Mark Hayes.mp3' type='audio/mpeg'></audio></td>
+</tr>
+  </tbody>
+</table>
+
+<!-- (Keep the rest of your footer content here as-is) -->
+<footer>
+  <p class="divider">🎵───────────────────────────────────────🎵</p>
+  <p>📘 <strong>Instructions:❓</strong> <a href="instructions.html" target="_blank">instructions.html</a></p>
+  <p>🌐 <strong>URLs:</strong> <a href="https://harmonygrits.blogspot.com" target="_blank">harmonygrits.blogspot.com</a> | <a href="https://fearringtonvillagesingers.org" target="_blank">fearringtonvillagesingers.org</a></p>
+  <p>📧 <strong>Email:</strong> <a href="mailto:info@fearringtonvillagesingers.org">info@fearringtonvillagesingers.org</a></p>
+  <p>🕒 <strong>Updated:</strong> Last Updated: 10 Sep 2025 04:19 PMs</p>
+  <p>🖋️ <strong>Author:</strong> Bob Maarschalkerweerd (R) 2025</p>
+  <p>📬 <strong>Contact:</strong> <a href="mailto:BobMaars@gmail.com">BobMaars@gmail.com</a></p>
+  <p style="margin-top: 0.8em;">
+    ⬆️ <a href="#top">Back to Top</a> | 🏠 <a href="index.html">Return to Index</a>
+  </p>
+</footer>
+
+<script>
+  document.getElementById("searchBox").addEventListener("keyup", function() {
+    const filter = this.value.toLowerCase();
+    const rows = document.querySelectorAll("table.sortable tbody tr");
+
+    rows.forEach(row => {
+      const text = row.textContent.toLowerCase();
+      row.style.display = text.includes(filter) ? "" : "none";
+    });
+  });
+</script>
+<script>
+  function toggleTheme() {
+    document.body.classList.toggle("dark");
+  }
+
+  document.getElementById("searchBox").addEventListener("keyup", function() {
+    const filter = this.value.toLowerCase();
+    const rows = document.querySelectorAll("table.sortable tbody tr");
+
+    rows.forEach(row => {
+      const text = row.textContent.toLowerCase();
+      row.style.display = text.includes(filter) ? "" : "none";
+    });
+  });
+</script>
+</body>
+</html>
